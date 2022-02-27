@@ -1,0 +1,16 @@
+Write-Host This must be run with Administrative privledges.
+$oldPcName = Read-Host -Prompt 'Input the OLD pc name'
+$newPcName = Read-Host -Prompt 'Input the NEW pc name'
+
+
+Try
+{
+    Rename-Computer -ComputerName "$oldPcName" -NewName "$newPcName" -ErrorAction Stop
+}
+Catch
+{
+    Write-Host $_.Exception.Message -ForegroundColor Red
+    Write-Host Please review the issue and try again.
+}
+
+cmd /c 'pause'
