@@ -1,0 +1,6 @@
+
+@ECHO OFF
+ECHO ===================================
+systeminfo | findstr /c:"BIOS Version"
+ECHO ===================================
+pause
