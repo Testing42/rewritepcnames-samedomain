@@ -1,3 +1,5 @@
 wmic bios get SerialNumber
 
 pause
+
+:: this is a batch file
