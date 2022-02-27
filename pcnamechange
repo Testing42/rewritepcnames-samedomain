@@ -1,3 +1,5 @@
+#this is a powershell file
+
 Write-Host This must be run with Administrative privledges.
 $oldPcName = Read-Host -Prompt 'Input the OLD pc name'
 $newPcName = Read-Host -Prompt 'Input the NEW pc name'
